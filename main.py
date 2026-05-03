@@ -1,10 +1,11 @@
-from flask import Flask
+from fastapi import FastAPI
 
-app = Flask(__name__)
+app = FastAPI()
 
-@app.route('/')
-def hello():
-    return 'Hello, World!'
-
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.get("/")
+def home():
+    return {
+        "mensaje": "Bienvenida a mi aplicación web en Azure",
+        "estudiante": "Katherine Monterroso",
+        "estado": "Despliegue Inicial"
+    }

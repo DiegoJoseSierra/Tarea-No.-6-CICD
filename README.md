@@ -1,6 +1,6 @@
 # Tarea No. 6 - CI/CD
 
-Esta es una aplicación web simple construida con Flask para demostrar un pipeline de CI/CD.
+Esta es una aplicación web construida con FastAPI para demostrar un pipeline de CI/CD en Azure.
 
 ## Instalación
 
@@ -11,11 +11,11 @@ Esta es una aplicación web simple construida con Flask para demostrar un pipeli
 
 2. Ejecuta la aplicación:
    ```
-   python main.py
+   uvicorn main:app --reload
    ```
 
-3. Abre tu navegador en `http://localhost:5000`
+3. Abre tu navegador en `http://localhost:8000`
 
 ## Descripción
 
-La aplicación muestra un mensaje "Hello, World!" en la página principal.
+La aplicación muestra un mensaje de bienvenida en formato JSON en la página principal, incluyendo el nombre del estudiante y el estado del despliegue.
