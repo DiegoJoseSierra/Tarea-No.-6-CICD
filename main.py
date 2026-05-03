@@ -3,9 +3,9 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-def home():
+def read_root():
     return {
-        "mensaje": "Bienvenida a mi aplicación web en Azure",
-        "estudiante": "Katherine Monterroso",
-        "estado": "Despliegue Inicial"
+        "mensaje": "¡Despliegue automático verificado con éxito!",
+        "estudiante": "Diego Jose Sierra Carcamo",
+        "estado": "Finalizado y Verificado"
     }

@@ -19,3 +19,7 @@ Esta es una aplicación web construida con FastAPI para demostrar un pipeline de
 ## Descripción
 
 La aplicación muestra un mensaje de bienvenida en formato JSON en la página principal, incluyendo el nombre del estudiante y el estado del despliegue.
+
+## Estudiante
+
+- Diego Jose Sierra Carcamo
